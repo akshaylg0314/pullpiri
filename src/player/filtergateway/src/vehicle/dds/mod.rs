@@ -283,6 +283,7 @@ pub mod dds_type_metadata {
         }
     }
 }
+
 // Include generated type registry
 #[allow(unused)]
 pub mod dds_type_registry {
