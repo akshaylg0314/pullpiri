@@ -39,9 +39,9 @@ impl VehicleManager {
             Err(e) => {
                 log::warn!("Failed to initialize DDS manager with settings file: {}. Using default settings.", e);
                 // 기본 설정 적용
+                self.set_domain_id(100); // Set default domain ID only on failure
             }
         }
-        self.set_domain_id(100); // Set default domain ID
 
         Ok(())
     }
